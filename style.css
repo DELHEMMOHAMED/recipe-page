@@ -125,16 +125,36 @@ p{
     flex-direction: column;
 }
 
-.tableau p{
+.tableau {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
     margin-top: 20px;
+    font-family: 'Outfit',sans-serif;
 }
 
-.tableau p b{
-    text-align: right;  /* force l’alignement à droite */
+.row {
+    display: grid;
+    grid-template-columns: 120px auto;
+    padding: 5px 35px;
+    align-items: center;
+    gap: 2rem;
 }
+
+.row span {
+    text-align: left;
+}
+
+.row b {
+    text-align: left;
+    padding-left: 150px;
+    color: var(--Brown-800);
+}
+
+
+
+
+
+
 
 
 
